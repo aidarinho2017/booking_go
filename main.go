@@ -21,7 +21,7 @@ type UserData struct {
 var wg = sync.WaitGroup{}
 
 func main() {
-	greetUsers()
+	/*greetUsers()
 
 	for {
 		firstName, lastName, email, userTickets := getUserInput()
@@ -55,7 +55,10 @@ func main() {
 		}
 	}
 	wg.Wait()
-
+	*/
+	CreateFile()
+	ReadFile()
+	//RemoveFile()
 }
 func greetUsers() {
 	fmt.Printf("Welcome to our booking application\n")
